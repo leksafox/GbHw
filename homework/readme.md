@@ -15,3 +15,9 @@ https://github.com/leksafox/GbHw/tree/main/homework/hw_5
 
 Cоздала папку hw_6 для решения домашнего задания от 13.01.2023
 https://github.com/leksafox/GbHw/tree/main/homework/hw_6
+
+Cоздала папку hw_7 для решения домашнего задания от 16.01.2023
+https://github.com/leksafox/GbHw/tree/main/homework/hw_7
+
+Cоздала папку hw_8 для решения домашнего задания от 17.01.2023
+https://github.com/leksafox/GbHw/tree/main/homework/hw_8

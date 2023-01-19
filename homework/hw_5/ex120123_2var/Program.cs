@@ -8,7 +8,7 @@
 /* 1. Считывание данных от пользователя 
    Считать int число
    int <- string */
-int InputInt(string? text)  
+int InputInt(string? text)
 {
     return Convert.ToInt32(text);
 }
@@ -16,7 +16,7 @@ int InputInt(string? text)
 /* 2. Создать массив
    int-чисел
    int[] <- int */
-int[] CreatArray(int numb)  
+int[] CreatArray(int numb)
 {
     int[] array = new int[numb];
     return array;
@@ -26,11 +26,11 @@ int[] CreatArray(int numb)
    с клавиатуры
    int[] <- (void)  */
 
-void FillArray(int[] array) 
+void FillArray(int[] array)
 {
     for (int index = 0; index < array.Length; index++)
     {
-       array[index] = InputInt(Console.ReadLine());
+        array[index] = InputInt(Console.ReadLine());
     }
 }
 
@@ -38,13 +38,13 @@ void FillArray(int[] array)
    int[] <- int[] */
 int[] MultArray(int[] array)  //получает массив, и выдаёт новый массив
 {
-    // int[] mult = new int[array.Length/2];  так программа пропускает середину у нечётного числа
-    int[] mult = new int[array.Length/2+array.Length%2];
-    if(array.Length%2>0){mult[mult.Length-1]=array[mult.Length-1];};  
+    // int[] mult = new int[array.Length/2];  так программа пропускает середину у нечётного массива
+    int[] mult = new int[array.Length / 2 + array.Length % 2];
+    if (array.Length % 2 > 0) { mult[mult.Length - 1] = array[mult.Length - 1]; };
 
-    for(int i = 0; i < array.Length/2; i++)
+    for (int i = 0; i < array.Length / 2; i++)
     {
-       mult[i] = array[i] * array[array.Length-1-i]; 
+        mult[i] = array[i] * array[array.Length - 1 - i];
     }
     return mult;
 }
@@ -56,7 +56,7 @@ string PrintArray(int[] array)   //примает массив целых чис
     string output = String.Empty;
     for (int newIndex = 0; newIndex < array.Length; newIndex++)
     {
-       output = output + " " + array[newIndex];
+        output = output + " " + array[newIndex];
     }
     return output;
 }
